@@ -6,4 +6,5 @@ function definedGetter(property,name) {
     })
 }
 definedGetter('request','url')
+definedGetter('request','path')
 module.exports = proto;
