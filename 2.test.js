@@ -6,9 +6,10 @@ app.use((ctx)=>{
     console.log(ctx.request.url);
     console.log(ctx.url);
 
-    console.log(ctx.req.path);
-    console.log(ctx.request.req.path);
-    console.log(ctx.request.path);
-    console.log(ctx.path);
+    // console.log(ctx.req.path);
+    // console.log(ctx.request.req.path);
+    // console.log(ctx.request.path);
+    // console.log(ctx.path);
+    ctx.body = 'popo'
 })
 app.listen('3002')

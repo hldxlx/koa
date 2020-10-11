@@ -22,8 +22,15 @@ class koa {
 
     }
     handleRequest(req,res){
+        this.statusCode = 404
         let ctx = this.createContext(req,res);
         this.callbackFn(ctx)
+        let body = ctx.body
+        if(typeof body === 'undefined'){
+            res.end(`Not Found`)
+        }else if(typeof body === 'string'){
+            res.end(body)
+        }
     }
     listen(){
         let server = http.createServer(this.handleRequest.bind(this));
