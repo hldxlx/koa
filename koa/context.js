@@ -1,3 +1,2 @@
-/**
- * Created by cyb on 2020/10/11.
- */
+let proto = {};
+module.exports = proto;

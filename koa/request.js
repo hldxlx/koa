@@ -1,3 +1,2 @@
-/**
- * Created by cyb on 2020/10/11.
- */
+let request = {};
+module.exports = request;
