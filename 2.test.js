@@ -9,7 +9,7 @@ app.use((ctx)=>{
     // console.log(ctx.req.path);
     // console.log(ctx.request.req.path);
     // console.log(ctx.request.path);
-    // console.log(ctx.path);
+    // console.log(ctx.path);//ctx会代理ctx.request上的属性
     ctx.body = 'popo'
 })
 app.listen('3002')
